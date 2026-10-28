@@ -2,7 +2,7 @@ function SobreMi() {
   return (
     <div>
       <h1>Sobre Mí</h1>
-      <p>Hola, soy Camila Mardones, una apasionada desarrolladora web con experiencia en la creación de aplicaciones interactivas y funcionales. Me especializo en tecnologías como React, JavaScript y CSS, y siempre estoy buscando aprender y mejorar mis habilidades.</p>
+      <p>Hola, soy Camila Mardones, estudiante de ingenieria civil en informatica con experiencia en la creación de aplicaciones interactivas y funcionales. Me especializo en tecnologías como React, JavaScript y CSS, y siempre estoy buscando aprender y mejorar mis habilidades.</p>
       <h2>mis intereses</h2>
       <ul>
         <li>Desarrollo web</li>
