@@ -1,18 +1,39 @@
 import { NavLink } from "react-router-dom"
 
+const enlaces = [
+  { ruta: "/", nombre: "Inicio" },
+  { ruta: "/sobre-mi", nombre: "Sobre mí" },
+  { ruta: "/habilidades", nombre: "Habilidades" },
+  { ruta: "/proyectos", nombre: "Proyectos" },
+  { ruta: "/contacto", nombre: "Contacto" },
+]
+
 function Header() {
-    return (
-    <div classname="navbar">
-      <h1 classname="logo">Camila Mardones</h1>
-    <ul classname="nav-links">
-      <li><NavLink to="/" end>Inicio</NavLink></li>
-      <li><NavLink to="/sobre-mi">Sobre Mí</NavLink></li>
-      <li><NavLink to="/habilidades">Habilidades</NavLink></li>
-      <li><NavLink to="/proyectos">Proyectos</NavLink></li>
-      <li><NavLink to="/contacto">Contacto</NavLink></li>
-    </ul>
-    </div>
-    )
+  return (
+    <header className="header">
+      <div className="container navbar">
+        <NavLink
+          to="/"
+          className="logo"
+          aria-label="MiPortafolio, ir a Inicio"
+        >
+          MiPortafolio<span aria-hidden="true">.</span>
+        </NavLink>
+
+        <nav aria-label="Navegación principal">
+          <ul className="nav-links">
+            {enlaces.map(({ ruta, nombre }) => (
+              <li key={ruta}>
+                <NavLink to={ruta} end={ruta === "/"}>
+                  {nombre}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
 }
 
 export default Header
