@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
     return (
-    <div>
-      <h1>Camila Mardones</h1>
-    <ul>
+    <div classname="navbar">
+      <h1 classname="logo">Camila Mardones</h1>
+    <ul classname="nav-links">
       <li><NavLink to="/" end>Inicio</NavLink></li>
       <li><NavLink to="/sobre-mi">Sobre Mí</NavLink></li>
       <li><NavLink to="/habilidades">Habilidades</NavLink></li>

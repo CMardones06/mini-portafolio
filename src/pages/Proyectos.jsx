@@ -21,9 +21,14 @@ function Proyectos() {
     return (
     <div>
         <h1>Proyectos</h1>
-        {proyectos.map((proyecto, index) => (
-      <TarjetaProyecto key={index} proyecto={proyecto} />
-    ))}
+        {proyectos.map((proyecto) => (
+        <TarjetaProyecto
+        key={proyecto.enlace}
+        titulo={proyecto.titulo}
+         descripcion={proyecto.descripcion}
+         enlace={proyecto.enlace}
+  />
+))}
   </div>
 );  
 
