@@ -24,6 +24,22 @@ function SobreMi() {
     Universidad Católica de Temuco.
     </p>
     </section>
+    <section className="text-section">
+  <h2>¿Qué me interesa?</h2>
+  <ul className="intereses">
+    <li>El desarrollo web y las tecnologías frontend.</li>
+    <li>La programación y el aprendizaje de nuevas herramientas.</li>
+    <li>El diseño UX/UI.</li>
+  </ul>
+</section>
+
+<section className="text-section">
+  <h2>¿Hacia dónde quiero ir?</h2>
+  <p>
+    Quiero seguir desarrollando mis habilidades y, en el futuro,
+    especializarme en aplicaciones móviles.
+  </p>
+</section>
     </div>
     );
 }
