@@ -1,6 +1,7 @@
 function Habilidades() {
-  return <h1>Habilidades
+  return ( <h1>Habilidades
   </h1>
+
   const listaHabilidades = [
     { id: 1, nombre: "HTML", nivel: "Avanzado" },
     { id: 2, nombre: "CSS", nivel: "Avanzado" },
